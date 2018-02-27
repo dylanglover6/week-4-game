@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Collect the Crystals!</title>
+  <title>Temple Raider!</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
+        <div class="jumbotron col-sm-12">
+                <h1 class="display-4">Click on a Crystal to Raid the Temple!</h1>
                 <h2>Number to Guess: <span id="number-to-guess"></span></h2>
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-              </div>
+                <p>Each Crystal has a random value, reach the target number to win!</p>
+                <p>Wins: <div id="wins"></div></p>
+                <p>Losses: <div id="losses"></div></p>
+            </div>
     </div>
-<div id= "crystals">
+<div class="row">
+    <div class="col-sm-12 map">
+        <img class="temple temple-1" src="./assets/images/temple-4.png" alt="temple 1">
+        <img class="temple temple-2"src="./assets/images/temple-2.png" alt="temple 2">
+        <img class="temple temple-3"src="./assets/images/temple-3.png" alt="temple 3">
+        <img class="temple temple-4"src="./assets/images/temple-1.png" alt="temple 4">
+        <div id= "crystals"></div>
+    </div>
 </div>
-<div id="wins"></div>
-<div id="losses"></div>
+
 
     <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript/game.js" ></script>
