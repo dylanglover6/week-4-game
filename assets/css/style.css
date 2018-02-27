@@ -13,7 +13,17 @@ body {
     width: 150px;
     height: 150px;
 }
-
+.floater {
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    text-align: center;
+    text-indent: 25px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 5000;
+}
 .temple {
     position: relative;
     width: 400px;
